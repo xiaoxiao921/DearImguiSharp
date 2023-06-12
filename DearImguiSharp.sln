@@ -1,17 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30104.148
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DearImguiSharp", "DearImguiSharp\DearImguiSharp.csproj", "{EB29B01D-1D5F-4F36-BE38-525E9662663B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeGenerator", "CodeGenerator\CodeGenerator.csproj", "{FAFD16A2-5240-4885-85E1-35F40280D27B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeGenerator", "CodeGenerator\CodeGenerator.csproj", "{FAFD16A2-5240-4885-85E1-35F40280D27B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		net46|Any CPU = net46|Any CPU
+		net46|x64 = net46|x64
+		net46|x86 = net46|x86
+		netstandard2.0|Any CPU = netstandard2.0|Any CPU
+		netstandard2.0|x64 = netstandard2.0|x64
+		netstandard2.0|x86 = netstandard2.0|x86
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
@@ -23,6 +29,18 @@ Global
 		{EB29B01D-1D5F-4F36-BE38-525E9662663B}.Debug|x64.Build.0 = Debug|Any CPU
 		{EB29B01D-1D5F-4F36-BE38-525E9662663B}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{EB29B01D-1D5F-4F36-BE38-525E9662663B}.Debug|x86.Build.0 = Debug|Any CPU
+		{EB29B01D-1D5F-4F36-BE38-525E9662663B}.net46|Any CPU.ActiveCfg = net46|Any CPU
+		{EB29B01D-1D5F-4F36-BE38-525E9662663B}.net46|Any CPU.Build.0 = net46|Any CPU
+		{EB29B01D-1D5F-4F36-BE38-525E9662663B}.net46|x64.ActiveCfg = net46|Any CPU
+		{EB29B01D-1D5F-4F36-BE38-525E9662663B}.net46|x64.Build.0 = net46|Any CPU
+		{EB29B01D-1D5F-4F36-BE38-525E9662663B}.net46|x86.ActiveCfg = net46|Any CPU
+		{EB29B01D-1D5F-4F36-BE38-525E9662663B}.net46|x86.Build.0 = net46|Any CPU
+		{EB29B01D-1D5F-4F36-BE38-525E9662663B}.netstandard2.0|Any CPU.ActiveCfg = netstandard2.0|Any CPU
+		{EB29B01D-1D5F-4F36-BE38-525E9662663B}.netstandard2.0|Any CPU.Build.0 = netstandard2.0|Any CPU
+		{EB29B01D-1D5F-4F36-BE38-525E9662663B}.netstandard2.0|x64.ActiveCfg = netstandard2.0|Any CPU
+		{EB29B01D-1D5F-4F36-BE38-525E9662663B}.netstandard2.0|x64.Build.0 = netstandard2.0|Any CPU
+		{EB29B01D-1D5F-4F36-BE38-525E9662663B}.netstandard2.0|x86.ActiveCfg = netstandard2.0|Any CPU
+		{EB29B01D-1D5F-4F36-BE38-525E9662663B}.netstandard2.0|x86.Build.0 = netstandard2.0|Any CPU
 		{EB29B01D-1D5F-4F36-BE38-525E9662663B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB29B01D-1D5F-4F36-BE38-525E9662663B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EB29B01D-1D5F-4F36-BE38-525E9662663B}.Release|x64.ActiveCfg = Release|Any CPU
@@ -35,6 +53,18 @@ Global
 		{FAFD16A2-5240-4885-85E1-35F40280D27B}.Debug|x64.Build.0 = Debug|Any CPU
 		{FAFD16A2-5240-4885-85E1-35F40280D27B}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{FAFD16A2-5240-4885-85E1-35F40280D27B}.Debug|x86.Build.0 = Debug|Any CPU
+		{FAFD16A2-5240-4885-85E1-35F40280D27B}.net46|Any CPU.ActiveCfg = Release|Any CPU
+		{FAFD16A2-5240-4885-85E1-35F40280D27B}.net46|Any CPU.Build.0 = Release|Any CPU
+		{FAFD16A2-5240-4885-85E1-35F40280D27B}.net46|x64.ActiveCfg = Release|Any CPU
+		{FAFD16A2-5240-4885-85E1-35F40280D27B}.net46|x64.Build.0 = Release|Any CPU
+		{FAFD16A2-5240-4885-85E1-35F40280D27B}.net46|x86.ActiveCfg = Release|Any CPU
+		{FAFD16A2-5240-4885-85E1-35F40280D27B}.net46|x86.Build.0 = Release|Any CPU
+		{FAFD16A2-5240-4885-85E1-35F40280D27B}.netstandard2.0|Any CPU.ActiveCfg = Release|Any CPU
+		{FAFD16A2-5240-4885-85E1-35F40280D27B}.netstandard2.0|Any CPU.Build.0 = Release|Any CPU
+		{FAFD16A2-5240-4885-85E1-35F40280D27B}.netstandard2.0|x64.ActiveCfg = Release|Any CPU
+		{FAFD16A2-5240-4885-85E1-35F40280D27B}.netstandard2.0|x64.Build.0 = Release|Any CPU
+		{FAFD16A2-5240-4885-85E1-35F40280D27B}.netstandard2.0|x86.ActiveCfg = Release|Any CPU
+		{FAFD16A2-5240-4885-85E1-35F40280D27B}.netstandard2.0|x86.Build.0 = Release|Any CPU
 		{FAFD16A2-5240-4885-85E1-35F40280D27B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAFD16A2-5240-4885-85E1-35F40280D27B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FAFD16A2-5240-4885-85E1-35F40280D27B}.Release|x64.ActiveCfg = Release|Any CPU

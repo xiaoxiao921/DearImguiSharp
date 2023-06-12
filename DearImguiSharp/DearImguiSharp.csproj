@@ -1,7 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net5.0;netcoreapp3.1</TargetFrameworks>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Authors>Sewer56</Authors>
     <Description>Wrapper for the Dear ImGui library (docking branch) with internal API exposed and support for Win32, D3D9/10/11, OpenGL 2/3, SDL2, GLFW &amp; Vulkan backends.</Description>
@@ -11,6 +10,7 @@
     <PackageProjectUrl>https://github.com/Sewer56/DearImguiSharp</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Sewer56/DearImguiSharp</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
+    <Configurations>net46;netstandard2.0</Configurations>
   </PropertyGroup>
 
   <ItemGroup>
@@ -38,21 +38,33 @@
       <PackagePath>runtimes/osx-x64/native</PackagePath>
       <Pack>true</Pack>
     </Content>
-    <Content Include="deps\CppSharp.Runtime.dll">
-      <Pack>true</Pack>
-      <PackagePath>lib/netcoreapp3.1</PackagePath>
-    </Content>    
-    <Content Include="deps\CppSharp.Runtime.dll">
-      <Pack>true</Pack>
-      <PackagePath>lib/net5.0</PackagePath>
-    </Content>
 	<Content Include="build\net40\DearImguiSharp.targets" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Reference Include="CppSharp.Runtime">
-      <HintPath>deps\CppSharp.Runtime.dll</HintPath>
-    </Reference>
-  </ItemGroup>
+	<PropertyGroup Condition="'$(Configuration)'=='netstandard2.0'">
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<OutputPath>../bin/</OutputPath>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)'=='net46'">
+		<TargetFramework>net46</TargetFramework>
+		<OutputPath>../bin/</OutputPath>
+	</PropertyGroup>
+
+	<ItemGroup Condition="'$(Configuration)'=='netstandard2.0'">
+		<Reference Include="DearImguiSharp">
+			<HintPath>../libs/netstandard2.0/CppSharp.Runtime.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(Configuration)'=='net46'">
+		<Reference Include="DearImguiSharp">
+			<HintPath>../libs/net46/CppSharp.Runtime.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="System.Numerics.Vectors" Version="4.5.0" />
+	</ItemGroup>
 
 </Project>
